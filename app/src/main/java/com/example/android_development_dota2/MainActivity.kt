@@ -38,6 +38,7 @@ class MainActivity : ComponentActivity() {
                         DotaDemo()
                         ReviewAndRatings()
                         RatingCard()
+                        RatingCard()
                         InstallButton()
                     }
                 }
@@ -58,6 +59,7 @@ fun ScreenPreview() {
                 DisplayText()
                 DotaDemo()
                 ReviewAndRatings()
+                RatingCard()
                 RatingCard()
                 InstallButton()
             }

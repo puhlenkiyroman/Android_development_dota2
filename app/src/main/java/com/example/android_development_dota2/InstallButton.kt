@@ -24,7 +24,6 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun InstallButton() {
     var isDownloadStarted by remember { mutableStateOf(false) }
-
     Card(
         modifier = Modifier
             .height(78.dp)

@@ -3,6 +3,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -66,5 +67,11 @@ fun RatingCard() {
             fontSize = 12.sp,
             fontWeight =  FontWeight.ExtraLight,
         )
-    )
+    )/*
+    Image(
+        painter = painterResource(id = R.drawable.vector),
+        contentDescription = "Profile photo",
+        modifier = Modifier
+            .fillMaxWidth()
+    )*/
 }
