@@ -16,6 +16,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
+import com.example.android_development_dota2.ui.theme.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -41,17 +42,19 @@ fun RatingCard() {
                 text = "Auguste Conte",
                 color = Color.White,
                 style = TextStyle(
+                    fontFamily = FontFamily,
                     fontSize = 16.sp,
-                    fontWeight =  FontWeight.ExtraLight,
+                    fontWeight =  FontWeight.Normal,
                 )
             )
             Spacer(modifier = Modifier.height(4.dp))
             Text(
                 text = "February 14, 2019",
-                color = Color.White,
                 style = TextStyle(
-                    fontSize = 8.sp,
-                    fontWeight =  FontWeight.ExtraLight,
+                    fontFamily = FontFamily,
+                    fontSize = 12.sp,
+                    fontWeight =  FontWeight.Normal,
+                    color = Color(0x66FFFFFF),
                 )
             )
             Spacer(modifier = Modifier.height(16.dp))
@@ -64,8 +67,10 @@ fun RatingCard() {
         text = "“Once you start to learn its secrets, there’s a wild and exciting variety of play here that’s unmatched, even by its peers.”",
         color = Color.White,
         style = TextStyle(
+            fontFamily = FontFamily,
             fontSize = 12.sp,
-            fontWeight =  FontWeight.ExtraLight,
+            fontWeight =  FontWeight.Normal,
+            color = Color(0xFFA8ADB7),
         )
     )/*
     Image(

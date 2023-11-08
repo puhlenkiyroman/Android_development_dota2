@@ -1,9 +1,6 @@
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Text
@@ -14,6 +11,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import com.example.android_development_dota2.ui.theme.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.android_development_dota2.R
@@ -26,9 +24,9 @@ fun ReviewAndRatings() {
         color = Color.White,
         text = "Review & Ratings",
         style = TextStyle(
+            fontFamily = FontFamily,
             fontSize = 16.sp,
             fontWeight = FontWeight.Normal,
-            /*fontFamily = FontFamily(Font(R.font.sk_modernist))*/
         )
     )
     Row() {
@@ -38,8 +36,9 @@ fun ReviewAndRatings() {
             color = Color.White,
             text = "4.9",
             style = TextStyle(
-                fontSize = 50.sp,
-                fontWeight = FontWeight.Normal
+                fontFamily = FontFamily,
+                fontSize = 48.sp,
+                fontWeight = FontWeight.Bold
             )
         )
         Column() {
@@ -52,11 +51,12 @@ fun ReviewAndRatings() {
                 contentScale = ContentScale.Crop
             )
             Text (
-                color = Color.White,
                 text = "70M Reviews",
                 style = TextStyle(
-                    fontSize = 10.sp,
-                    fontWeight = FontWeight.ExtraLight
+                    fontFamily = FontFamily,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.ExtraLight,
+                    color = Color(0xFFA8ADB7),
                 )
             )
         }

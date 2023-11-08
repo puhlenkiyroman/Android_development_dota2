@@ -18,6 +18,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.android_development_dota2.ui.theme.FontFamily
 
 @Composable
 fun ImageWithLogo() {
@@ -51,8 +52,9 @@ fun ImageWithLogo() {
             text = "Dota 2",
             color = Color.White,
             style = TextStyle(
+                fontFamily = FontFamily,
                 fontSize = 20.sp,
-                fontWeight = FontWeight.ExtraLight,
+                fontWeight = FontWeight.Bold,
             )
         )
         Row(modifier = Modifier
@@ -70,8 +72,9 @@ fun ImageWithLogo() {
                 text = "70M",
                 color = Color.White,
                 style = TextStyle(
-                    fontSize = 10.sp,
+                    fontSize = 12.sp,
                     fontWeight = FontWeight.ExtraLight,
+                    color = Color(0xFF45454D),
                 )
             )
         }

@@ -6,9 +6,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.android_development_dota2.ui.theme.FontFamily
 
 @Composable
 fun DisplayText() {
@@ -17,12 +20,12 @@ fun DisplayText() {
     Text(
         modifier = Modifier
             .padding (horizontal = 25.dp, vertical = 20.dp),
-        color = Color.White,
         text = "Dota 2 is a multiplayer online battle arena (MOBA) game which has two teams of five players compete to collectively destroy a large structure defended by the opposing team known as the \"Ancient\", whilst defending their own.",
         style = TextStyle(
+            fontFamily = FontFamily,
             fontSize = 12.sp,
             fontWeight = FontWeight.Normal,
-            /*fontFamily = FontFamily(Font(R.font.sk_modernist))*/
-        )
+            color = Color(0xB2EEF2FB),
+            )
     )
 }

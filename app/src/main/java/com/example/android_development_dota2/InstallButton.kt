@@ -20,6 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.android_development_dota2.ui.theme.FontFamily
 
 @Composable
 fun InstallButton() {
@@ -40,7 +41,12 @@ fun InstallButton() {
         ) {
             Text(
                 text = if (isDownloadStarted) "Скачка начата" else "Install",
-                style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
+                style = TextStyle(
+                    fontFamily = FontFamily,
+                    fontSize = 20.sp,
+                    fontWeight =  FontWeight.Bold,
+                    color = Color(0xFF050B18),
+                ),
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxSize()
             )
