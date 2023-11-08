@@ -15,8 +15,6 @@ import com.example.android_development_dota2.ui.theme.FontFamily
 
 @Composable
 fun DisplayText() {
-    Spacer(modifier = Modifier
-        .height(80.dp))
     Text(
         modifier = Modifier
             .padding (horizontal = 25.dp, vertical = 20.dp),

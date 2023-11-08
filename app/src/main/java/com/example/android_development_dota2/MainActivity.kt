@@ -7,6 +7,7 @@ import DotaDemo
 import InstallButton
 import RatingCard
 import ReviewAndRatings
+import ChipsRow
 
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -34,6 +35,7 @@ class MainActivity : ComponentActivity() {
                         .verticalScroll(rememberScrollState())
                     ) {
                         ImageWithLogo()
+                        ChipsRow()
                         DisplayText()
                         DotaDemo()
                         ReviewAndRatings()
@@ -56,6 +58,7 @@ fun ScreenPreview() {
         ) {
             Column(modifier = Modifier.fillMaxSize()) {
                 ImageWithLogo()
+                ChipsRow()
                 DisplayText()
                 DotaDemo()
                 ReviewAndRatings()

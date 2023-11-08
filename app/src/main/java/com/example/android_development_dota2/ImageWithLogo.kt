@@ -70,10 +70,10 @@ fun ImageWithLogo() {
                 modifier = Modifier
                     .padding (horizontal = 5.dp),
                 text = "70M",
-                color = Color.White,
                 style = TextStyle(
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.ExtraLight,
+                    fontFamily = FontFamily,
+                    fontSize = 10.sp,
+                    fontWeight = FontWeight.Normal,
                     color = Color(0xFF45454D),
                 )
             )
