@@ -3,6 +3,8 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -72,11 +74,60 @@ fun RatingCard() {
             fontWeight =  FontWeight.Normal,
             color = Color(0xFFA8ADB7),
         )
-    )/*
+    )
     Image(
         painter = painterResource(id = R.drawable.vector),
-        contentDescription = "Profile photo",
+        contentDescription = "Vector",
         modifier = Modifier
             .fillMaxWidth()
-    )*/
+            .height(50.dp),
+    )
+    Row (modifier = Modifier
+        .padding (horizontal = 25.dp)) {
+        Image(
+            painter = painterResource(id = R.drawable.reviwers_photo),
+            contentDescription = "Profile photo",
+            modifier = Modifier
+                .size(40.dp)
+                .clip(CircleShape)
+        )
+
+        Spacer(modifier = Modifier.width(8.dp))
+
+        Column {
+            Text(
+                text = stringResource(id = R.string.comment_author2),
+                color = Color.White,
+                style = TextStyle(
+                    fontFamily = FontFamily,
+                    fontSize = 16.sp,
+                    fontWeight =  FontWeight.Normal,
+                )
+            )
+            Spacer(modifier = Modifier.height(4.dp))
+            Text(
+                text = stringResource(id = R.string.comment_date),
+                style = TextStyle(
+                    fontFamily = FontFamily,
+                    fontSize = 12.sp,
+                    fontWeight =  FontWeight.Normal,
+                    color = Color(0x66FFFFFF),
+                )
+            )
+            Spacer(modifier = Modifier.height(16.dp))
+
+        }
+    }
+    Text(
+        modifier = Modifier
+            .padding(horizontal = 25.dp),
+        text = stringResource(id = R.string.comment_text),
+        color = Color.White,
+        style = TextStyle(
+            fontFamily = FontFamily,
+            fontSize = 12.sp,
+            fontWeight =  FontWeight.Normal,
+            color = Color(0xFFA8ADB7),
+        )
+    )
 }

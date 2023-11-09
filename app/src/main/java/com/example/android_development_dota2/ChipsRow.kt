@@ -34,7 +34,7 @@ fun ChipsRow() {
                 style = TextStyle(
                     fontFamily = FontFamily,
                     fontSize = 10.sp,
-                    fontWeight = FontWeight.Medium,
+                    fontWeight = FontWeight.Normal,
                     color = Color(0xFF41A0E7),
                 ),
                 textAlign = TextAlign.Center,
@@ -53,7 +53,7 @@ fun ChipsRow() {
                 style = TextStyle(
                     fontFamily = FontFamily,
                     fontSize = 10.sp,
-                    fontWeight = FontWeight.Medium,
+                    fontWeight = FontWeight.Normal,
                     color = Color(0xFF41A0E7),
                 ),
                 textAlign = TextAlign.Center,
@@ -72,7 +72,7 @@ fun ChipsRow() {
                 style = TextStyle(
                     fontFamily = FontFamily,
                     fontSize = 10.sp,
-                    fontWeight = FontWeight.Medium,
+                    fontWeight = FontWeight.Normal,
                     color = Color(0xFF41A0E7),
                 ),
                 textAlign = TextAlign.Center,
