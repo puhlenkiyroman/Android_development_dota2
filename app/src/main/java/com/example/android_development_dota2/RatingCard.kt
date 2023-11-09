@@ -15,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
@@ -56,11 +57,10 @@ fun RatingCard() {
                     fontFamily = FontFamily,
                     fontSize = 12.sp,
                     fontWeight =  FontWeight.Normal,
-                    color = Color(0x66FFFFFF),
+                    color = colorResource(id = R.color.grey_500),
                 )
             )
             Spacer(modifier = Modifier.height(16.dp))
-
         }
     }
     Text(
@@ -72,7 +72,7 @@ fun RatingCard() {
             fontFamily = FontFamily,
             fontSize = 12.sp,
             fontWeight =  FontWeight.Normal,
-            color = Color(0xFFA8ADB7),
+            color = colorResource(id = R.color.grey_500),
         )
     )
     Image(
@@ -111,7 +111,7 @@ fun RatingCard() {
                     fontFamily = FontFamily,
                     fontSize = 12.sp,
                     fontWeight =  FontWeight.Normal,
-                    color = Color(0x66FFFFFF),
+                    color = colorResource(id = R.color.grey_500),
                 )
             )
             Spacer(modifier = Modifier.height(16.dp))
@@ -127,7 +127,7 @@ fun RatingCard() {
             fontFamily = FontFamily,
             fontSize = 12.sp,
             fontWeight =  FontWeight.Normal,
-            color = Color(0xFFA8ADB7),
+            color = colorResource(id = R.color.grey),
         )
     )
 }

@@ -7,15 +7,16 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
-import com.example.android_development_dota2.R
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.android_development_dota2.R
 import com.example.android_development_dota2.ui.theme.FontFamily
 
 @Composable
@@ -27,7 +28,7 @@ fun ChipsRow() {
                 .padding(horizontal = 8.dp)
                 .width(53.dp)
                 .height(22.dp)
-                .background(color = Color(0x3D44A9F4), shape = RoundedCornerShape(size = 100.dp))
+                .background(color = colorResource(id = R.color.blue), shape = RoundedCornerShape(size = 100.dp))
         ) {
             Text (
                 text = "MOBA",
@@ -35,7 +36,7 @@ fun ChipsRow() {
                     fontFamily = FontFamily,
                     fontSize = 10.sp,
                     fontWeight = FontWeight.Normal,
-                    color = Color(0xFF41A0E7),
+                    color = colorResource(id = R.color.blue_light),
                 ),
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxSize()
@@ -46,7 +47,7 @@ fun ChipsRow() {
                 .padding(horizontal = 8.dp)
                 .width(93.dp)
                 .height(22.dp)
-                .background(color = Color(0x3D44A9F4), shape = RoundedCornerShape(size = 100.dp))
+                .background(color = colorResource(id = R.color.blue), shape = RoundedCornerShape(size = 100.dp))
         ) {
             Text (
                 text = "MULTIPLAYER",
@@ -54,7 +55,7 @@ fun ChipsRow() {
                     fontFamily = FontFamily,
                     fontSize = 10.sp,
                     fontWeight = FontWeight.Normal,
-                    color = Color(0xFF41A0E7),
+                    color = colorResource(id = R.color.blue_light),
                 ),
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxSize()
@@ -65,7 +66,7 @@ fun ChipsRow() {
                 .padding(horizontal = 8.dp)
                 .width(73.dp)
                 .height(22.dp)
-                .background(color = Color(0x3D44A9F4), shape = RoundedCornerShape(size = 100.dp))
+                .background(color = Color.Blue, shape = RoundedCornerShape(size = 100.dp))
         ) {
             Text (
                 text = "STRATEGY",
@@ -73,7 +74,7 @@ fun ChipsRow() {
                     fontFamily = FontFamily,
                     fontSize = 10.sp,
                     fontWeight = FontWeight.Normal,
-                    color = Color(0xFF41A0E7),
+                    color = colorResource(id = R.color.blue_light),
                 ),
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxSize()

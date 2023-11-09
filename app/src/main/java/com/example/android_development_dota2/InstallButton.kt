@@ -1,6 +1,7 @@
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -48,11 +49,12 @@ fun InstallButton() {
                     fontFamily = FontFamily,
                     fontSize = 20.sp,
                     fontWeight =  FontWeight.Bold,
-                    color = Color(0xFF050B18),
+                    color = Color.Black,
                 ),
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxSize()
             )
         }
     }
+    Spacer(modifier = Modifier.height(35.dp))
 }

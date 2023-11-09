@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
@@ -35,15 +36,15 @@ fun ImageWithLogo() {
         )
         Box(
             modifier = Modifier
-                .padding(15.dp)
+                .padding(5.dp)
         ) {
             Image(
-                painter = painterResource(id = R.drawable.logo),
+                painter = painterResource(id = R.drawable.logo1),
                 contentDescription = "logo",
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
-                    .width(105.dp)
-                    .height(95.dp)
+                    .width(130.dp)
+                    .height(125.dp)
                     .offset(y = 250.dp), // Установка смещения для логотипа
             )
         }}
@@ -62,7 +63,7 @@ fun ImageWithLogo() {
             .padding (vertical = 5.dp)) {
             Image(
                 painter = painterResource(id = R.drawable.stars_dota2),
-                contentDescription = "logo",
+                contentDescription = "stars",
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
                     .width(76.dp)
@@ -75,7 +76,7 @@ fun ImageWithLogo() {
                     fontFamily = FontFamily,
                     fontSize = 10.sp,
                     fontWeight = FontWeight.Normal,
-                    color = Color(0xFF45454D),
+                    color = colorResource(id = R.color.grey_700),
                 )
             )
         }
