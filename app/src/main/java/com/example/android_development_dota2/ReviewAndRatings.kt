@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import com.example.android_development_dota2.ui.theme.FontFamily
@@ -22,7 +23,7 @@ fun ReviewAndRatings() {
         modifier = Modifier
             .padding (horizontal = 25.dp, vertical = 20.dp),
         color = Color.White,
-        text = "Review & Ratings",
+        text = stringResource(id = R.string.review_and_ratings),
         style = TextStyle(
             fontFamily = FontFamily,
             fontSize = 16.sp,

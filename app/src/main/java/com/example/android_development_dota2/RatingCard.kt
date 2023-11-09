@@ -3,7 +3,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -15,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import com.example.android_development_dota2.ui.theme.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -39,7 +39,7 @@ fun RatingCard() {
 
         Column {
             Text(
-                text = "Auguste Conte",
+                text = stringResource(id = R.string.comment_author),
                 color = Color.White,
                 style = TextStyle(
                     fontFamily = FontFamily,
@@ -49,7 +49,7 @@ fun RatingCard() {
             )
             Spacer(modifier = Modifier.height(4.dp))
             Text(
-                text = "February 14, 2019",
+                text = stringResource(id = R.string.comment_date),
                 style = TextStyle(
                     fontFamily = FontFamily,
                     fontSize = 12.sp,
@@ -64,7 +64,7 @@ fun RatingCard() {
     Text(
         modifier = Modifier
             .padding(horizontal = 25.dp),
-        text = "“Once you start to learn its secrets, there’s a wild and exciting variety of play here that’s unmatched, even by its peers.”",
+        text = stringResource(id = R.string.comment_text),
         color = Color.White,
         style = TextStyle(
             fontFamily = FontFamily,

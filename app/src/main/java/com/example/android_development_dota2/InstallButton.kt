@@ -15,11 +15,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.android_development_dota2.R
 import com.example.android_development_dota2.ui.theme.FontFamily
 
 @Composable
@@ -40,7 +42,8 @@ fun InstallButton() {
                 .padding(10.dp) // Отступ для центрирования
         ) {
             Text(
-                text = if (isDownloadStarted) "Скачка начата" else "Install",
+                text = if (isDownloadStarted) stringResource(id = R.string.downloading)
+                else stringResource(id = R.string.install),
                 style = TextStyle(
                     fontFamily = FontFamily,
                     fontSize = 20.sp,

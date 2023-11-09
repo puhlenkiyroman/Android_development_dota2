@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -49,7 +50,7 @@ fun ImageWithLogo() {
     Column(modifier = Modifier
         .padding (horizontal = 125.dp)) {
         Text (
-            text = "Dota 2",
+            text = stringResource(id = R.string.name_game),
             color = Color.White,
             style = TextStyle(
                 fontFamily = FontFamily,
@@ -69,7 +70,7 @@ fun ImageWithLogo() {
             Text(
                 modifier = Modifier
                     .padding (horizontal = 5.dp),
-                text = "70M",
+                text = stringResource(id = R.string.launches),
                 style = TextStyle(
                     fontFamily = FontFamily,
                     fontSize = 10.sp,
